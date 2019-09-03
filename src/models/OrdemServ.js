@@ -5,7 +5,11 @@ const OrdemSchema = new mongoose.Schema({
     setor: String,
     data: String,
     descricao: String,
-    solicitante: String, 
+    solicitante: String,
+    status: {
+        type: Boolean,
+        default: false,
+    }, 
 }, {
     timestamps: true,
 })
