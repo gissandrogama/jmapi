@@ -1,11 +1,26 @@
 const mongoose = require('mongoose')
 
 const OrdemSchema = new mongoose.Schema({
-    equipamento: String,
-    setor: String,
-    data: String,
-    descricao: String,
-    solicitante: String,
+    equipamento: {
+        type: String,
+        required: true,
+    },
+    setor: {
+        type: String,
+        required: true,
+    },
+    data: {
+        type: String,
+        required: true,
+    },
+    descricao: {
+        type: String,
+        required: true,
+    },
+    solicitante: {
+        type: String,
+        required: true,
+    },
     status: {
         type: Boolean,
         default: false,
