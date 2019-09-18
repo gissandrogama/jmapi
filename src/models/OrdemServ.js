@@ -21,6 +21,9 @@ const OrdemSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    data_atend:{
+        type: String,
+    },
     status: {
         type: Boolean,
         default: false,
