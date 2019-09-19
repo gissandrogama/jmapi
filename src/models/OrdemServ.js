@@ -9,8 +9,8 @@ const OrdemSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    data: {
-        type: String,
+    date: {
+        type: Date,
         required: true,
     },
     descricao: {
