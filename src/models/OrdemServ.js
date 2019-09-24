@@ -10,7 +10,8 @@ const OrdemSchema = new mongoose.Schema({
         required: true,
     },
     data: {
-        type: String,
+        type: Date,
+        default: Date.now,        
         required: true,
     },
     descricao: {
@@ -20,6 +21,9 @@ const OrdemSchema = new mongoose.Schema({
     solicitante: {
         type: String,
         required: true,
+    },
+    data_atend:{
+        type: String,
     },
     status: {
         type: Boolean,
