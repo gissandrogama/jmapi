@@ -2,28 +2,24 @@ const mongoose = require('mongoose')
 
 const OrdemSchema = new mongoose.Schema({
     equipamento: {
-        type: String,
-        required: true,
+        type: String,        
     },
     setor: {
         type: String,
-        required: true,
     },
     data: {
         type: Date,
         default: Date.now,        
-        required: true,
     },
     descricao: {
         type: String,
-        required: true,
     },
     solicitante: {
         type: String,
-        required: true,
     },
     data_atend:{
-        type: String,
+        type: Date,
+        default: Date.now,
     },
     status: {
         type: Boolean,

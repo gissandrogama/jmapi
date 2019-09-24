@@ -14,14 +14,16 @@ module.exports = {
     },
 
     async store(req, res){
-        const { equipamento, setor, data, descricao, solicitante} = req.body
+        const { equipamento, setor, data, descricao, solicitante, data_atend, status} = req.body
 
         const ordem = await Ordem.create({
             equipamento,
             setor,
             data,
             descricao,
-            solicitante, 
+            solicitante,
+            data_atend,
+            status, 
         })
         return res.json(ordem)
     },
