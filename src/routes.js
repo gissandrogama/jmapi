@@ -5,7 +5,6 @@ const OsnotController = require('./controller/OsnotController')
 const routes = new express.Router()
 
 routes.get('/ordems', OrdemController.index)
-routes.get('/ordems', OsnotController.index)
 routes.post('/ordem', OrdemController.store)
 routes.get('/ordem/:id', OrdemController.show)
 routes.put('/ordem/:id', OrdemController.update)
