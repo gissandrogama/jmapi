@@ -2,9 +2,11 @@ const Ordem = require ("../models/OrdemServ")
 
 module.exports = {
     async index(req, res){
-        const ordems = await Ordem.find().sort('-createAt')
         
+        const ordems = await Ordem.find({ status: false }).sort('-createAt')        
+
         return res.json(ordems)
+        
     },
 
     async show(req, res){

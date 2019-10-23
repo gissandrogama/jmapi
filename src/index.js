@@ -9,7 +9,8 @@ app.use(express.json())
 app.use(cors())
 
 mongoose.connect('mongodb://localhost:27017/jmapi', {
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 })
 
 app.use(require('./routes'))
