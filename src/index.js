@@ -8,8 +8,9 @@ app.use(express.json())
 
 app.use(cors())
 
-mongoose.connect('mongodb://localhost:27017/jmapi', {
-    useNewUrlParser: true
+mongoose.connect('mongodb+srv://gissandrogama:Ycterror18+*@cluster0-alljp.mongodb.net/test?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 })
 
 app.use(require('./routes'))
