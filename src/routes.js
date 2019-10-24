@@ -1,5 +1,6 @@
 const express = require('express')
 const OrdemController = require('./controller/OrdemController')
+const OsnotController = require('./controller/OsnotController')
 
 const routes = new express.Router()
 
