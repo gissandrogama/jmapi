@@ -8,7 +8,7 @@ app.use(express.json())
 
 app.use(cors())
 
-mongoose.connect('mongodb+srv://gissandrogama:Ycterror18+*@cluster0-alljp.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
