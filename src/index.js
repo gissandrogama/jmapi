@@ -11,9 +11,9 @@ app.use(cors())
 mongoose.connect(
     process.env.MONGO_URL, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
 })
 
 app.use(require('./routes'))
 
-app.listen(process.env.PORT || 3333)
+app.listen(process.env.PORT || 3000)
